@@ -18,6 +18,47 @@ Let us take a look inside the `src` folder :-
 
 - `utils` -> Contains helper functions.
 
+### Setting up the project :-
+
+- Download this template from github and open it in your preferred editor.
+- In the root directory, create a `.env` file and add the following environment variables
+    ``` 
+        PORT=<port number of your choice>
+    ```
+    eg:
+    ```
+        PORT=3000
+    ```
+
+- Inside the `src/config` folder, create a file named as config.json and write the following code:
+    ```
+        {
+            "development": {
+                "username": "root",
+                "password": null,
+                "database": "database_development",
+                "host": "127.0.0.1",
+                "dialect": "mysql"
+            },
+            "test": {
+                "username": "root",
+                "password": null,
+                "database": "database_test",
+                "host": "127.0.0.1",
+                "dialect": "mysql"
+            },
+            "production": {
+                "username": "root",
+                "password": null,
+                "database": "database_production",
+                "host": "127.0.0.1",
+                "dialect": "mysql"
+            }
+        }
+    ```
+
+- If you are setting up your development environment, then write the username of your DB, password of your DB, and in dialect mention whatever DB you are using ( Eg:- MySQL, MariaDB etc.).
+
 
 
 
